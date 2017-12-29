@@ -23,7 +23,7 @@ Invoke ". build/envsetup.sh" from your shell to add the following functions to y
 
 EOF
 
-    __print_elixer_functions_help
+    __print_elixir_functions_help
 
 cat <<EOF
 
