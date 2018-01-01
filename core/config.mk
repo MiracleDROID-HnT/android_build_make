@@ -978,7 +978,7 @@ $(eval include device/elixir/sepolicy/common/sepolicy.mk)
 -include $(TOPDIR)vendor/*/build/core/apicheck.mk
 
 # Rules for QCOM targets
--include $(TOPDIR)vendor/lineage/build/core/qcom_target.mk
+-include $(TOPDIR)vendor/elixir/build/core/qcom_target.mk
 endif
 
 include $(BUILD_SYSTEM)/dumpvar.mk
