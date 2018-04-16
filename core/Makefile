@@ -1249,7 +1249,7 @@ endef
 
 define build-recoveryramdisk
   @echo "Generating Changelog"
-  $(hide) ./vendor/elixir/tools/changelog.sh
+  $(hide) ./vendor/mdroid/tools/changelog.sh
   $(hide) mv $(PRODUCT_OUT)/Changelog.txt $(PRODUCT_OUT)/$(TARGET_PRODUCT)-Changelog.txt
   @echo ----- Making recovery image ------
   $(hide) mkdir -p $(TARGET_RECOVERY_OUT)

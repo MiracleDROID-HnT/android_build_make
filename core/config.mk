@@ -188,7 +188,7 @@ FIND_LEAVES_EXCLUDES := $(addprefix --prune=, $(SCAN_EXCLUDE_DIRS) .repo .git)
 $(call project-set-path-variant,recovery,RECOVERY_VARIANT,bootable/recovery)
 
 -include vendor/extra/BoardConfigExtra.mk
--include vendor/elixir/config/BoardConfigElixir.mk
+-include vendor/mdroid/config/BoardConfigMDroid.mk
 
 # The build system exposes several variables for where to find the kernel
 # headers:
@@ -973,7 +973,7 @@ endif
 ifneq ($(MDROID_BUILD),)
 ## We need to be sure the global selinux policies are included
 ## last, to avoid accidental resetting by device configs
-$(eval include device/elixir/sepolicy/common/sepolicy.mk)
+$(eval include device/mdroid/sepolicy/common/sepolicy.mk)
 
 # Include any vendor specific config.mk file
 -include $(TOPDIR)vendor/*/build/core/config.mk
@@ -982,7 +982,7 @@ $(eval include device/elixir/sepolicy/common/sepolicy.mk)
 -include $(TOPDIR)vendor/*/build/core/apicheck.mk
 
 # Rules for QCOM targets
--include $(TOPDIR)vendor/elixir/build/core/qcom_target.mk
+-include $(TOPDIR)vendor/mdroid/build/core/qcom_target.mk
 endif
 
 include $(BUILD_SYSTEM)/dumpvar.mk

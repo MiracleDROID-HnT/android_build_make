@@ -94,5 +94,5 @@ FRAMEWORKS_BASE_JAVA_SRC_DIRS := \
 	$(addprefix frameworks/base/,$(FRAMEWORKS_BASE_SUBDIRS))
 
 ifneq ($(MDROID_BUILD),)
--include $(TOPDIR)vendor/elixir/build/core/pathmap.mk
+-include $(TOPDIR)vendor/mdroid/build/core/pathmap.mk
 endif
