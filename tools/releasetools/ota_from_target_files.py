@@ -503,6 +503,14 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   if HasVendorPartition(input_zip):
     system_progress -= 0.1
 
+  script.Print("-------------- MiracleDROID Project ---------------");
+  script.Print(" __  __ _             _     ___  ___  ___ ___ ___  ");
+  script.Print("|  \/  (_)_ _ __ _ __| |___|   \| _ \/ _ \_ _|   \ ");
+  script.Print("| |\/| | | '_/ _` / _| / -_) |) |   / (_) | || |) |");
+  script.Print("|_|  |_|_|_| \__,_\__|_\___|___/|_|_\\\___/___|___/ ");
+  script.Print("                                                   ");
+  script.Print("------------------ Android 8.1.0 ------------------");
+
   # Place a copy of file_contexts.bin into the OTA package which will be used
   # by the recovery program.
   if "selinux_fc" in OPTIONS.info_dict:
