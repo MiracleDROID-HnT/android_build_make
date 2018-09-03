@@ -28,7 +28,7 @@ PRODUCT_PACKAGES := \
     WAPPushManager
 
 # Additional settings used in all AOSP builds
-PRODUCT_PROPERTY_OVERRIDES := \
+PRODUCT_GENERIC_PROPERTIES += \
     ro.config.ringtone=The_big_adventure.ogg
 
 # Put en_US first in the list, so make it default.
