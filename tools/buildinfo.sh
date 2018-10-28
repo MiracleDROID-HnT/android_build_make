@@ -31,9 +31,6 @@ echo "ro.product.brand=$PRODUCT_BRAND"
 echo "ro.product.name=$PRODUCT_NAME"
 echo "ro.product.device=$TARGET_DEVICE"
 
-echo "ro.mdroid.device=$TARGET_DEVICE"
-echo "ro.mdroid.ota.version=mdroid-1.0-OFFICIAL-$TARGET_DEVICE-$(date +"%Y%m%d")"
-
 # These values are deprecated, use "ro.product.cpu.abilist"
 # instead (see below).
 echo "# ro.product.cpu.abi and ro.product.cpu.abi2 are obsolete,"
@@ -64,5 +61,6 @@ fi
 echo "ro.build.characteristics=$TARGET_AAPT_CHARACTERISTICS"
 
 echo "ro.mdroid.device=$MDROID_DEVICE"
+echo "ro.mdroid.ota.version=mdroid-1.0-OFFICIAL-$TARGET_DEVICE-$(date +"%Y%m%d")"
 
 echo "# end build properties"
