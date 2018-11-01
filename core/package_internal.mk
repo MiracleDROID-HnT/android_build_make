@@ -399,6 +399,11 @@ built_apk_splits := $(foreach s,$(my_split_suffixes),$(intermediates)/package_$(
 installed_apk_splits := $(foreach s,$(my_split_suffixes),$(my_module_path)/$(LOCAL_MODULE)_$(s).apk)
 endif
 
+# Resource dependencies
+ifdef LOCAL_RESOURCE_DEPENDENCIES
+$(R_file_stamp): $(LOCAL_RESOURCE_DEPENDENCIES)
+endif
+
 ifdef LOCAL_USE_AAPT2
 my_compiled_res_base_dir := $(intermediates)/flat-res
 renderscript_target_api :=
