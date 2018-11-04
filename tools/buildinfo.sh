@@ -61,6 +61,8 @@ fi
 echo "ro.build.characteristics=$TARGET_AAPT_CHARACTERISTICS"
 
 echo "ro.mdroid.device=$MDROID_DEVICE"
+if [ "${MDROID_BUILDTYPE^^}" == "OFFICIAL" ] ; then
 echo "ro.mdroid.ota.version=mdroid-1.0-OFFICIAL-$TARGET_DEVICE-$(date +"%Y%m%d")"
+fi
 
 echo "# end build properties"
