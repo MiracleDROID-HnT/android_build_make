@@ -29,7 +29,7 @@ PRODUCT_PACKAGES := \
 
 # Additional settings used in all AOSP builds
 PRODUCT_GENERIC_PROPERTIES += \
-    ro.config.ringtone=The_big_adventure.ogg
+    ro.config.ringtone=The_big_adventure.ogg,The_big_adventure.ogg
 
 # Put en_US first in the list, so make it default.
 PRODUCT_LOCALES := en_US
