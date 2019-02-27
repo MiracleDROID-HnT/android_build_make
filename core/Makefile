@@ -606,10 +606,10 @@ ifneq ($(LZMA_RAMDISK_TARGETS),)
 endif
 ifneq ($(LZ4_RAMDISK_TARGETS),)
   ifneq (,$(findstring boot,$(LZ4_RAMDISK_TARGETS)))
-    BOOT_RAMDISK_COMPRESSOR := lz4 -f -9
+    BOOT_RAMDISK_COMPRESSOR := lz4 -f -l -9
   endif
   ifneq (,$(findstring recovery,$(LZ4_RAMDISK_TARGETS)))
-    RECOVERY_RAMDISK_COMPRESSOR := lz4 -f -9
+    RECOVERY_RAMDISK_COMPRESSOR := lz4 -f -l -9
     TARGET_NOT_USE_GZIP_RECOVERY_RAMDISK := true
   endif
 endif
